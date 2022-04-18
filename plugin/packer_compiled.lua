@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/marko/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
     url = "https://github.com/onsails/lspkind-nvim"
   },
+  neogit = {
+    loaded = true,
+    path = "/home/marko/.local/share/nvim/site/pack/packer/start/neogit",
+    url = "https://github.com/TimUntersberger/neogit"
+  },
   nerdtree = {
     loaded = true,
     path = "/home/marko/.local/share/nvim/site/pack/packer/start/nerdtree",

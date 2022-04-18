@@ -1,4 +1,4 @@
-local lsp_installer = require('nvim-lsp-installer')
+local lsp_installer = require "nvim-lsp-installer"
 
 local on_attach = function(client, bufnr)
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
@@ -40,7 +40,19 @@ lsp_installer.on_server_ready(function(server)
 
     -- Customize your own language server
     if server.name == "sumneko_lua" then
-	 	local sumneko_opts = require('lua.lsp.settings.sumneko_lua')
+	 	local sumneko_opts = {
+            settings = {
+                Lua = {
+                    diagnostics = { globals = { "vim" }},
+                    workspace = {
+                        library = {
+                            [vim.fn.expand("$VIMRUNTIME/lua")] = true,
+                            [vim.fn.stdpath("config") .. "/lua"] = true,
+                        }
+                    }
+                }
+            }
+        }
         opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
 	end
 

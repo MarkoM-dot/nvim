@@ -2,17 +2,12 @@ return require'packer'.startup(function(use)
 
     -- Backpacking
     use 'wbthomason/packer.nvim'
+    use 'nvim-lua/plenary.nvim'
 
     -- Travel
     use 'preservim/nerdtree'
     use 'jremmen/vim-ripgrep'
-    use {
-      'nvim-telescope/telescope.nvim',
-      requires = {'nvim-lua/plenary.nvim'}
-    }
-
-    -- Teamwork
-    use 'lewis6991/gitsigns.nvim'
+    use 'nvim-telescope/telescope.nvim'
 
     -- Logos
     use {
@@ -42,4 +37,6 @@ return require'packer'.startup(function(use)
     -- Languages
     use {'rust-lang/rust.vim', ft = 'rust'}
 
+    -- Teamwork
+    use 'lewis6991/gitsigns.nvim'
 end)

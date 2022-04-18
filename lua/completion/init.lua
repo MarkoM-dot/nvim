@@ -1,5 +1,4 @@
 local lspkind = require "lspkind"
-lspkind.init()
 
 local cmp = require "cmp"
 
