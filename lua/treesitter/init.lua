@@ -3,7 +3,12 @@ require'nvim-treesitter.configs'.setup {
         'lua',
         'rust',
         'typescript',
-        'python'
+        'python',
+        'bash',
+        'css',
+        'html',
+        'javascript',
+        'markdown',
     },
 
     sync_install = false,
