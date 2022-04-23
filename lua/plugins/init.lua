@@ -6,7 +6,6 @@ return require'packer'.startup(function(use)
 
     -- Travel
     use 'preservim/nerdtree'
-    use 'jremmen/vim-ripgrep'
     use 'nvim-telescope/telescope.nvim'
 
     -- Logos

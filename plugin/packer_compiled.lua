@@ -156,11 +156,6 @@ _G.packer_plugins = {
     path = "/home/marko/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["vim-ripgrep"] = {
-    loaded = true,
-    path = "/home/marko/.local/share/nvim/site/pack/packer/start/vim-ripgrep",
-    url = "https://github.com/jremmen/vim-ripgrep"
-  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/marko/.local/share/nvim/site/pack/packer/start/vim-vsnip",
