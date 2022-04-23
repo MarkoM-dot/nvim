@@ -1,11 +1,7 @@
 local set = vim.opt
 
-vim.cmd [[
-    filetype plugin indent on
-]]
-vim.cmd [[
-    colorscheme nord
-]]
+set.termguicolors = true
+set.bg = 'dark'
 set.syntax = 'enable'
 
 set.expandtab = true
@@ -27,5 +23,12 @@ set.incsearch = true
 set.swapfile = false
 set.backup = false
 set.scrolloff = 8
+
+vim.cmd [[
+    filetype plugin indent on
+]]
+vim.cmd [[
+    colorscheme nord
+]]
 
 set.completeopt = {'menu', 'menuone', 'noselect'}
