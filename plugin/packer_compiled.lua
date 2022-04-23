@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/marko/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/preservim/nerdtree"
   },
+  ["nord-vim"] = {
+    loaded = true,
+    path = "/home/marko/.local/share/nvim/site/pack/packer/start/nord-vim",
+    url = "https://github.com/arcticicestudio/nord-vim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/marko/.local/share/nvim/site/pack/packer/start/nvim-cmp",

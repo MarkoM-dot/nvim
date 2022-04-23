@@ -20,6 +20,9 @@ return require'packer'.startup(function(use)
         run = ':TSUpdate'
     }
 
+    -- Landscape
+    use 'arcticicestudio/nord-vim'
+
     -- Completion
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'

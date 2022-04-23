@@ -3,6 +3,9 @@ local set = vim.opt
 vim.cmd [[
     filetype plugin indent on
 ]]
+vim.cmd [[
+    colorscheme nord
+]]
 set.syntax = 'enable'
 
 set.expandtab = true
