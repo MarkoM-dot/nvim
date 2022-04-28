@@ -22,6 +22,10 @@ return require'packer'.startup(function(use)
     -- Landscape
     use 'arcticicestudio/nord-vim'
 
+    -- Visor
+    use 'vim-airline/vim-airline'
+    use 'vim-airline/vim-airline-themes'
+
     -- Completion
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
