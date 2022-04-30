@@ -12,6 +12,11 @@ local on_attach = function(client, bufnr)
     buf_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
     buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
     buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
+    buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+
+    buf_set_keymap('n', '<leader>df', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
+    buf_set_keymap('n', '<leader>db', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
+    buf_set_keymap('n', '<leader>dl', '<cmd>Telescope diagnostics<CR>', opts)
 end
 
 local servers = {
@@ -40,7 +45,7 @@ lsp_installer.on_server_ready(function(server)
 
     -- Customize your own language server
     if server.name == "sumneko_lua" then
-	 	local sumneko_opts = {
+ 	    local sumneko_opts = {
             settings = {
                 Lua = {
                     diagnostics = { globals = { "vim" }},
